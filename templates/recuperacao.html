@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Recuperar senha</title>
+</head>
+<body>
+    <h1>Recuperar senha</h1>
+
+    <p>Digite seu e-mail para recuperar sua conta.</p>
+
+    <form id="recuperacao-form" method="post" action="/recuperacao">
+        <input type="email" placeholder="Seu e-mail" required name="email">
+        <br><br>
+        <button type="submit">Recuperar senha</button>
+    </form>
+    <p>{{msg}}</p>
+
+    <p><a href="/login">Voltar para o login</a></p>
+</body>
+</html>

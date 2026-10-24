@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar e-mail</title>
+</head>
+<body>
+
+    <h1>Verificar e-mail</h1>
+
+    <p>Enviamos um código para o seu e-mail.</p>
+    <p>Digite o código abaixo para confirmar sua conta.</p>
+
+    <form id="recuperacaoCode-form" method="post" action="/recuperacao/code">
+        <label for="codigo">Código de verificação:</label>
+        <br><br>
+
+        <input
+            type="text"
+            id="codigo"
+            name="codigo"
+            placeholder="Digite o código"
+            inputmode="numeric"
+            pattern="[0-9]{6}"
+            maxlength="6"
+            minlength="6"
+            required
+        >
+
+        <br><br>
+
+        <button type="submit">Verificar código</button>
+    </form>
+    <p>{{msg}}</p>
+
+    <p><a href="/register">Voltar para o cadastro</a></p>
+
+</body>
+</html>

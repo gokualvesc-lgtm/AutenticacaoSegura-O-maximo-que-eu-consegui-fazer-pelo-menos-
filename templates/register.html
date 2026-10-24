@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+</head>
+<body>
+    <h1>Criar conta</h1>
+
+    <form id="register-form" method="post" action="/register">
+        <input type="text" placeholder="Nome" required name="nome">
+        <br><br>
+        <input type="email" placeholder="E-mail" required name="email">
+        <br><br>
+        <input type="password" placeholder="Senha" required name="password">
+        <br><br>
+        <button type="submit">Cadastrar</button>
+    </form>
+    <p>{{msg}}</p>
+
+    <p><a href="/login">Voltar para o login</a></p>
+</body>
+</html>
